@@ -166,8 +166,30 @@
         color: red;
         margin-top: 10px;
     }
+/* Large desktops (1200px and above) */
+@media screen and (min-width: 1200px) {
+    .custom-upload-container {
+        height: 500px;
+    }
+    .custom-preview-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Laptops / small desktops (992px - 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .custom-upload-container {
+        height: 450px;
+    }
+    .custom-preview-image {
+        width: 110px;
+        height: 110px;
+    }
+}
+
 /* Tablets landscape (768px - 991px) */
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .custom-upload-container {
         height: 400px;
     }
@@ -175,8 +197,8 @@
         width: 80px;
     }
     .custom-preview-image {
-        width: 90px;
-        height: 90px;
+        width: 95px;
+        height: 95px;
     }
     .custom-browse-button,
     .custom-convert-button,
@@ -184,15 +206,10 @@
         font-size: 15px;
         padding: 9px 18px;
     }
-    .spinner {
-        width: 100px;
-        height: 100px;
-        border-width: 14px;
-    }
 }
 
 /* Tablets portrait / large phones (576px - 767px) */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
     .custom-upload-container {
         height: 350px;
     }
@@ -200,8 +217,8 @@
         width: 70px;
     }
     .custom-preview-image {
-        width: 80px;
-        height: 80px;
+        width: 85px;
+        height: 85px;
     }
     .custom-browse-button,
     .custom-convert-button,
@@ -224,7 +241,7 @@
 }
 
 /* Small phones (401px - 575px) */
-@media screen and (max-width: 575px) {
+@media screen and (min-width: 401px) and (max-width: 575px) {
     .custom-upload-container {
         height: 300px;
         border-radius: 8px;
@@ -234,11 +251,14 @@
         margin-bottom: 8px;
     }
     .custom-preview-image {
-        width: 70px;
-        height: 70px;
+        width: 75px;
+        height: 75px;
         margin: 4px;
     }
-    .custom-browse-button,
+    .custom-browse-button {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
     .custom-convert-button,
     .custom-download-button {
         font-size: 13px;
@@ -262,13 +282,10 @@
     .custom-preview-container {
         padding: 5px;
     }
-    .custom-upload-area {
-        padding: 15px;
-    }
 }
 
 /* Extra small phones (320px - 400px) */
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 320px) and (max-width: 400px) {
     .custom-upload-container {
         height: 260px;
         border-radius: 6px;
